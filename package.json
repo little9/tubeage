@@ -1,0 +1,19 @@
+{
+  "name": "tubeage",
+  "version": "1.0.0",
+  "description": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "youtube",
+    "image",
+    "embed"
+  ],
+  "author": "Jamie Little",
+  "license": "NCSA",
+   "bin": {
+    "tubeage": "index.js"
+  }
+}

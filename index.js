@@ -21,7 +21,6 @@ var Tubage = {
     processArgs: function (args) {  
         var idArg = args[2];
         return idArg;
-        console.log(args);
     }
 };
 

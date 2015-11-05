@@ -1,10 +1,10 @@
 {
   "name": "tubeage",
-  "version": "1.0.0",
-  "description": "0.1.0",
+  "version": "0.1.0",
+  "description": "Command line utility that returns a thumbnail link when given a YouTube embed code",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "mocha"
   },
   "keywords": [
     "youtube",
@@ -13,7 +13,10 @@
   ],
   "author": "Jamie Little",
   "license": "NCSA",
-   "bin": {
+  "bin": {
     "tubeage": "index.js"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
   }
 }

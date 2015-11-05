@@ -9,4 +9,13 @@ describe('Tubeage', function () {
         });
     });
 });
+describe('Tubeage', function () {
+    describe('#processArgs', function () {
+        it('it should process the command line arguments and get the first parameter', function () {
+            var args = ['node', 'index.js', 'bGhSHXebjbE', 'foo'];
+            var ytId = tubage.processArgs(args);
+            assert.equal(ytId,'bGhSHXebjbE')
+        });
+    });
+});
 

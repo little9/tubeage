@@ -1,6 +1,12 @@
 # :tv: tubeage :tv:
 A node.js command line utility that takes a YouTube embed code and returns a thumbnail link to that video
 
+You can install it from npm:
+```bash
+npm install -g tubeage
+```
+
+
 ## Usage 
 ``` bash
 tubeage 0j1KA8YlZ0w

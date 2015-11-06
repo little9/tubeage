@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Command line utility that returns a thumbnail link when given a YouTube embed code",
   "main": "index.js",
+  "repository": "github:little9/tubeage",
   "scripts": {
     "test": "mocha"
   },

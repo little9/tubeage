@@ -3,17 +3,17 @@
 var Tubeage = {
 
     strings : {
-        thumbnailUrl: "http://img.youtube.com/vi/YOUTUBEID/THUMBQUALITY",
-        youTubeUrl: "https://www.youtube.com/watch?v=YOUTUBEID",
+        thumbnailUrl: 'http://img.youtube.com/vi/YOUTUBEID/THUMBQUALITY',
+        youTubeUrl: 'https://www.youtube.com/watch?v=YOUTUBEID',
         markUp: '<a href="YOUTUBEURL"><img src="THUMBURL"/></a>',
-        noEmbedCodeError : "You should provide a YouTube embed code"
+        noEmbedCodeError : 'You should provide a YouTube embed code'
     },
     youTubeQuality : {
-        default : "default.jpg",
-        sd : "sddefault.jpg",
-        hq : "hqdefault.jpg",
-        mq : "mqdefault.jpg",
-        max : "maxresdefault.jpg"
+        default : 'default.jpg',
+        sd : 'sddefault.jpg',
+        hq : 'hqdefault.jpg',
+        mq : 'mqdefault.jpg',
+        max : 'maxresdefault.jpg'
     },
     userArgs : {
         embedCode : 'undefined',
@@ -21,16 +21,17 @@ var Tubeage = {
     },
     outputEmbedMarkup: function (args) {
        
-        var ytUrl = Tubeage.strings.youTubeUrl.replace("YOUTUBEID", args.embedCode);
+        var ytUrl = Tubeage.strings.youTubeUrl.replace('YOUTUBEID', args.embedCode);
         var thumbUrl = Tubeage.strings.thumbnailUrl
-                       .replace("YOUTUBEID", args.embedCode)
-                       .replace("THUMBQUALITY", args.quality);
+                       .replace('YOUTUBEID', args.embedCode)
+                       .replace('THUMBQUALITY', args.quality);
         var markUp = Tubeage.strings.markUp.replace('YOUTUBEURL', ytUrl)
                                            .replace('THUMBURL', thumbUrl);
 
         return markUp;
     },
     processArgs: function (args) {  
+
         var myArgs = Tubeage.userArgs;
 
         if (typeof args[2] === 'undefined'){ 

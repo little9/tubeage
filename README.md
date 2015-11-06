@@ -3,7 +3,7 @@ A node.js command line utility that takes a YouTube embed code and returns a thu
 
 You can install it from npm:
 ```bash
-npm install -g tubeage
+npm install tubeage -g
 ```
 
 
